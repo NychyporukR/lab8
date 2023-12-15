@@ -28,7 +28,6 @@ int main() {
         cout << endl;
     }
 
-    // Використання алгоритму count_if для обчислення кількості нульових елементів
     int zeroCount = count_if(matrix.begin(), matrix.end(),
         [](const vector<int>& row) {
             return count(row.begin(), row.end(), 0) > 0;
